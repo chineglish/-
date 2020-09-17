@@ -1,0 +1,34 @@
+<template>
+  <div>
+    <div class="form-box">
+      <yueyue v-if="formData.prdTemplate === '1102'"></yueyue>
+      <lianlitian v-if="formData.prdTemplate === '1300'"></lianlitian>
+      <huixiang v-if="formData.prdTemplate === '1303' && (formData.prdName.indexOf('汇享')) > -1"></huixiang>
+      <zhencui v-if="formData.prdTemplate === '1303' && (formData.prdName.indexOf('臻萃')) > -1"></zhencui>
+    </div>
+  </div>
+</template>
+<script>
+import yueyue from './riskDisclosure/yueyue'
+import lianlitian from './riskDisclosure/lianlitian'
+import huixiang from './riskDisclosure/huixiang'
+import zhencui from './riskDisclosure/zhencui'
+export default {
+  name: 'riskDisclosure',
+  components: {
+    yueyue,
+    lianlitian,
+    huixiang,
+    zhencui
+  },
+  data () {
+    return {}
+  },
+  methods: {},
+  created () {
+    this.formData = this.$route.params.data
+  }
+}
+</script>
+
+<style scoped>

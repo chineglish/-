@@ -1,0 +1,146 @@
+
+/* 改变字体大小功能小字体样式 */
+
+/* 10px */
+.fs10 {
+    font-size: 10px;
+}
+
+.m-form-buttom-msg,
+.other-panel,
+.el-step__description.is-finish, 
+.el-steps .el-step__description.is-process,
+.fs12 {
+    font-size: 12px;
+}
+ /* 13px */
+ .el-breadcrumb__inner,
+ .tips,
+ .el-breadcrumb__inner,
+ .btn-next .el-icon,
+ .el-pagination .btn-prev .el-icon,
+ .el-table__row,
+ .el-pagination__jump,
+ .el-select-dropdown__item,
+ .fs13 {
+     font-size: 13px;
+ }
+ .el-input__inner{
+    font-size: 13px !important;
+ }
+
+
+/* 14px */
+div,
+.el-button,
+.el-checkbox__label,
+.el-radio__label,
+.el-breadcrumb,
+.el-form-item__content,
+.threeMenuList,
+.searchInput,
+/* input::-webkit-input-placeholder, */
+.mt5,
+.d2-contentmenu-item,
+.form-box1 .span,
+.form-box1 .search-btn,
+.el-table .cell,
+.el-step__title.is-finish,
+.el-steps .is-process, .el-step__title,
+.card,
+.fs14 {
+    font-size: 14px;
+}
+.el-form-item__label{
+    font-size: 14px !important;
+}
+
+/* 16px */
+.el-submenu__icon-arrow,
+.el-step__title,
+.details p,
+.detailTitle,
+span.productendDate,
+.d2-theme-container-aside-menu-icon,
+.el-menu .header-menu-item i.fa,
+.details .btn,
+.error-box,
+.fs16 {
+    font-size: 16px;
+}
+.el-tabs__item{
+  font-size: 16px !important;
+}
+
+.el-menu-item,
+.el-submenu__title {
+    font-size: 17px !important;
+}
+
+
+/* 18px */
+.content .lookMore,
+.header .top .title,
+.check-mark,
+.m-form-res-status-text,
+.m-res-info .m-info-title,
+.detailBtn,.redBackBtn,
+.searchDate,
+.content .boxWrap .sonTitle,
+.details .text,
+.fs18 {
+    font-size: 18px;
+}
+
+/* 20px */
+
+.m-new-form-block-contianer-title,
+.d2-panel-search-item__icon-box i,
+.boxWrap .table .topLogo .title,
+.prompt i,
+.col2,.col3,.col5,.col6,
+.search-result-title,
+.el-tabs__nav,
+.toggle-aside-btn i,
+.details .num,
+.fs20 {
+    font-size: 20px;
+}
+
+/* 22px */
+.col1,
+.col4,
+.fs22 {
+    font-size: 22px;
+}
+
+/* 24px */
+.content .box .fll,
+.content .box,
+.fs24 {
+    font-size: 24px;
+}
+
+/* 30px */
+
+.m-new-form-link .el-icon-arrow-right,
+.d2-layout-header-aside-menu-empty i,
+.fs30 {
+    font-size: 30px;
+}
+
+/* 36px */
+.todoBox ul span,
+.fs36{
+    font-size: 36px;
+}
+
+/* 40px */
+.fs40 {
+    font-size: 40px;
+}
+
+.ml20,
+.ml30 {
+    padding-top: 20px;
+}

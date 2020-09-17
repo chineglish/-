@@ -1,0 +1,137 @@
+<template>
+  <div class="form-box">
+    <m-new-form
+      :componentJson="formConfigJson"
+      :formModel="formModel"
+    >
+    </m-new-form>
+  </div>
+</template>
+
+<script>
+import { bill_Type, endorse_Type } from '@/assets/js/entity.js'
+import util from '@/libs/util'
+export default {
+  props: {
+    formModel: {
+      type: Object,
+      default: () => {
+        return {}
+      }
+    }
+  },
+  name: 'EndorsementTransferApplySoloConffer',
+  data () {
+    return {
+      formConfigJson: {
+        formItems: [
+          {
+            title: '票据信息',
+            formWidth: '100%',
+            group: [
+              {
+                'disabled': false,
+                'label': '票据号码',
+                'type': 'text',
+                'key': 'stdBillNum'
+              },
+              {
+                'disabled': false,
+                'label': '票据类型',
+                'type': 'text',
+                formatter: (key, value) => util.handleEnums(bill_Type, value),
+                'key': 'stdBillTyp'
+              },
+              {
+                'disabled': false,
+                'label': '出票日期',
+                'type': 'text',
+                formatter: (key, value) => util.separationDate(value),
+                'key': 'stdIssDate'
+              },
+              {
+                'disabled': false,
+                'label': '票面到期日',
+                'type': 'text',
+                formatter: (key, value) => util.separationDate(value),
+                'key': 'stdDueDate'
+              },
+              {
+                'disabled': false,
+                'label': '票面金额',
+                'type': 'text',
+                formatter: (key, value) => util.formatCurrency(value),
+                'key': 'stdPmMoney'
+              },
+              {
+                'disabled': false,
+                'label': '出票人名称',
+                'type': 'text',
+                'key': 'stdDrwrNam'
+              },
+              {
+                'disabled': false,
+                'label': '承兑行名称',
+                'type': 'text',
+                'key': 'stdAccpNam'
+              }
+            ]
+          },
+          {
+            title: '被背书人信息',
+            formWidth: '100%',
+            group: [
+              {
+                'disabled': false,
+                'label': '被背书人名称',
+                'type': 'text',
+                'key': 'stdEndeNam'
+              },
+              {
+                'disabled': false,
+                'label': '被背书人账号',
+                'type': 'text',
+                'key': 'stdEndeAcc'
+              },
+              {
+                'disabled': false,
+                'label': '被背书人开户行号',
+                'type': 'text',
+                'key': 'stdEndeBnm'
+              },
+              {
+                'disabled': false,
+                'label': '转让标记',
+                'type': 'text',
+                formatter: (key, value) => util.handleEnums(endorse_Type, value),
+                'key': 'stdBanmFlg'
+              },
+              {
+                'disabled': false,
+                'label': '被背书人备注',
+                'type': 'text',
+                'key': 'std400Memo'
+              }
+            ]
+          },
+          {
+            title: '申请人信息',
+            formWidth: '100%',
+            // labelWidth: '50%',
+            group: [
+              {
+                'disabled': false,
+                'label': '客户账号',
+                'type': 'text',
+                'key': 'stdEndeAcc'
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  created () {
+  }
+}
+</script>
